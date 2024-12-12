@@ -14,7 +14,7 @@ resource "aws_instance" "test5" {
 }
 terraform {
   backend "s3" {
-    # Replace this with your bucket name!
+    
     bucket         = "devsecops-terraform-main"
     key            = "global/s3/terraform.tfstate"
     region         = "eu-west-2"
